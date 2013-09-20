@@ -22,6 +22,7 @@ public class Application extends Controller {
     	if(result == null)
     		notFound();
     	
+    	response().setHeader("Access-Control-Allow-Origin", "*");
         return ok(Json.toJson(result));
     }
     
@@ -32,6 +33,7 @@ public class Application extends Controller {
     	if(result == null)
     		notFound();
     	
+    	response().setHeader("Access-Control-Allow-Origin", "*");
         return ok(Json.toJson(result));
     }
 }

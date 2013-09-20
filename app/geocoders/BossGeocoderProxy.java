@@ -50,7 +50,7 @@ public class BossGeocoderProxy {
 			if(bound.isEmpty())
 				location = URLEncoder.encode(query, "UTF-8");
 			else
-				location = URLEncoder.encode(query  + ",+" + bound, "UTF-8");
+				location = URLEncoder.encode(query  + "+in+" + bound, "UTF-8");
 				
 			Logger.info(location);
 			
